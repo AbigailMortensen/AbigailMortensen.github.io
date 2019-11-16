@@ -1,0 +1,75 @@
+<!-- Guide to 07 - Data Models New Field -->
+<!DOCTYPE html>
+<html>
+
+  <header>
+    <h5> <a href = "index.html">menu</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "06.html">prev</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "08.html">next</a>
+    </h5>
+  </header>
+
+  <body>
+
+    <h1>07 - Data Models New Field</h1>
+
+    <h4>Main Purpose</h4>
+    <p>
+      <ul>
+        <li>Learn how to create a new field in a data model</li>
+        <li>Learn about the different mappings/schemas/serializers that support data models</li>
+      </ul>
+    </p>
+
+    <h4>Guide to Completing</h4>
+    <p>
+      This is an important module because you learn about the inner workings of
+      an  Invenio data model. Prior to performing the module, I highly recommend
+      getting a general understanding of how Invenio defines a &quot;data model&quot;
+      and getting used to the terminology of serializer, loader, mappings, and
+      schemas--which you may do <a href= "https://invenio.readthedocs.io/en/latest/tutorials/understanding-data-models.html">here</a>.
+      This tutorial has brief, clear explanations for why you are doing each step.
+
+      <br><br> If you are not familiar with Python&#39;s indentation rules, read
+      <a href = "https://www.geeksforgeeks.org/statement-indentation-and-comment-in-python/">this</a>.
+
+      <br><br>****If you are new to Python
+      <br>Step 4: Python is not a &quot;free form&quot; language, which means
+      that indentation of code blocks has to be specifically placed. If you are
+      unsure what this means, you don&#39;t need to worry about it yet--just
+      make sure that any code you put into a Python file(ends in .py) lines up
+      with the code around it, and do not use the &quot;tab&quot; bar to do so.
+      In the example below, the top version will work, the bottom version will
+      give you errors because of the extra space before owner.
+
+      <br><br>contributors = Nested(ContributorSchemaV1, many=True, required=True)
+      <br>owner = fields.Integer()
+
+      <br><br>contributors = Nested(ContributorSchemaV1, many=True, required=True)
+      <br>&nbsp;owner = fields.Integer()
+
+      <br><br>****Warning For This Tutorial
+      <br> Use the Step 1: Bootstrap exercise with extreme caution. It will
+      get rid of all previous changes made to files/folders in any tutorials prior.
+
+      <br><br>****Troubleshooting
+      <br>Step 5: If ./scripts/setup or ./scripts/server will not work
+      <br>During my first attempt of this step, I had a previous web server
+      running, and something running in (my-site) virutalenv. I performed
+      ./scripts/setup without issue, and then ./scripts/server said I had open
+      nodes running, so I then closed my previous 2 previous servers and ran 
+      ./scripts/setup and ./scripts/server again, both of which gave me errors
+      that did not allow the scripts to work. Essentially, somewhere a mistake
+      in my steps prevented ./scripts/setup or ./scripts/server from running properly,
+      even after trying multiple times.
+      <br> My solution: go to ~/src/training and put in the command:
+      ./start-from.sh 05-customizing-invenio
+
+      <br><br>Step 7: Where do I find this file I&#39;m supposed to change?
+      <br>~/src/my_site/records/marshmallow/json.py
+
+    </p>
+  </body>
+</html>
