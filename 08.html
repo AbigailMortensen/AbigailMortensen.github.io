@@ -1,0 +1,57 @@
+<!-- Guide to 08 - Data Models Build From Scratch -->
+<!DOCTYPE html>
+<html>
+
+  <header>
+    <h5> <a href = "index.html">menu</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "07.html">prev</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "09.html">next</a>
+    </h5>
+  </header>
+
+  <body>
+
+    <h1>08 - Data Models: Build From Scratch</h1>
+
+    <h4>Main Purpose</h4>
+    <p>
+      <ul>
+        <li>Create your own data model from scratch</li>
+        <li>Learn about the components that form a data model</li>
+      </ul>
+    </p>
+
+    <h4>Guide to Completing 08</h4>
+    <p>
+     This tutorial shows you how to create a new data model by building your own
+     python files that utilize marshmallow, elasticsearch mappings, JSONSchema
+     mappings, loaders, serializers, and more. This module has a lot of working
+     with uncommenting Python code. If you are new to Python, and are not familiar
+     with their indentation and commenting rules, it is integral you be familiar
+     with these two concepts in particular so you know what to uncomment.
+     You may view <a href = "https://www.geeksforgeeks.org/statement-indentation-and-comment-in-python/">this</a>
+     for help.
+
+      <br><br>****Warning For This Tutorial
+      <br>Use the Step 1: Bootstrap exercise with extreme caution. It will get
+      rid of all previous changes made to files/folders in any tutorials prior.
+      <br><br>****Troubleshooting
+      <br>Step 2: location for setup.py is ~/src/my-site/setup.py
+      <br><br>When it says to uncomment the code found in my_site/authors/ext.py,
+      you are to uncomment all of ext.py that is feasible python code. Specifically,
+      uncomment everything below &quot; &quot; &quot; Flask extension for My site.
+      &quot; &quot; &quot; , but if text is surrounded by three sets of quotes,
+      leave it alone because three quotes denotes a comment in Python.
+      <br><br>Step 4: I believe there is a typo in this step, it tells us we
+      should be initializing record serializers but instead it tells us to
+      uncomment record_loaders, which we did in the previous step. If the steps
+      are followed exactly, record_serializers will never be initialized (and we
+      will get an error in several steps further when we have to run ./scripts/setup).
+      To initialize the record_serializers like we are trying to, uncomment line
+      34-37 in ~/src/my-site/my_site/authors/serializers/__init__.py
+
+    </p>
+  </body>
+</html>
