@@ -1,0 +1,61 @@
+<!-- Guide to 00 - Prerequisites -->
+<!DOCTYPE html>
+<html>
+
+  <header>
+    <h5> <a href = "index.html">menu</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "about.html">prev</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "01.html">next</a>
+    </h5>
+  </header>
+  <body>
+
+    <h1>00 - Prerequisites</h1>
+
+    <h4>How I Completed 00</h4>
+    <p>
+    If you choose to use Vagrant, it will take a substantial amount of time to get the VM running and for everything to download. <br> <br>
+    Prior to this tutorial, I was not familiar with the git clone command. If you are also new to git clone, there are two ways to perform it (option 2 is much easier): <br>
+
+    <ol>
+      <li>Configure your Github account to use a new or existing SSH key</li>
+        <ol>
+          <li>If you have not generated an SSH key before, you must do that before 1.2. See
+             <a href = "https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">here</a> for how.</li>
+          <li> If you have already generated an SSH key, or if you have already
+             completed step 1.1, see <a href = "https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account">here</a>
+             for how to connect it with your GitHub.</li>
+        </ol>
+
+      <br>
+      <li>Go to <a href= "https://github.com/inveniosoftware/training">here</a> and click on the &quot;clone or download&quot; button in the top right of the page
+        <ol>
+          <li>Make sure what you clicked says &quot;Clone with HTTPS&quot;.</li>
+          <li>Copy and paste the HTTPS link to your terminal after typing
+             &quot;git clone&quot;, replacing the git clone command recommended
+             in the tutorial.</li>
+        </ol>
+     </li>
+    </ol>
+
+    <br> Initially, I attempted to use Vagrant, which I had not used before. I ran into a host of issues:
+
+    <ul>
+      <li>My first attempt with my personal computer: after typing the git clone,
+         my terminal froze up trying to download items.</li>
+      <li>My second attempt, using a mac, successfully allowed me to use vagrant
+         up and vagrant ssh.</li>
+      <li>When I got to tutorial 01 - Getting Started, I was not able to run
+        ./scripts/bootstrap. Which then in turn did not allow me to create
+        ./scripts/setup or ./scripts/server. In order for these scripts to work
+        I had to run additional scripts not mentioned in the tutorial.</li>
+    </ul>
+
+    <br>
+    I then switched over to VirtualBox and followed the prerequisite steps without issue!
+
+    </p>
+  </body>
+</html>
