@@ -1,0 +1,59 @@
+<!-- Guide to 03 - Infrastructure Overview -->
+<!DOCTYPE html>
+<html>
+
+  <header>
+    <h5> <a href = "index.html">menu</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "02.html">prev</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href = "04.html">next</a>
+    </h5>
+  </header>
+
+  <body>
+
+    <h1>03 - Infrastructure Overview</h1>
+
+    <h4>Main Purpose</h4>
+    <p>
+     <ul>
+      <li>Learn the back-end, lower-level systems supporting Invenio Framework</li>
+      <li>Learn how to access information from back-end, lower-level systems</li>
+     </ul>
+    </p>
+
+    <h4>Guide to Completing 03</h4>
+    <p>
+     The commands you learn in this tutorial will not be used again in future
+     tutorials, however if you would like to learn more about these lower-level
+     systems check out these readings:
+      <br> <a href = "https://invenio.readthedocs.io/en/latest/architecture/application.html">WSGI, Celery</a>
+      <br> <a href = "https://invenio.readthedocs.io/en/latest/tutorials/build-a-repository.html#docker-and-docker-compose">Docker-compose.full.yml</a>
+      <br> <a href = "https://invenio.readthedocs.io/en/latest/architecture/infrastructure.html#background-processing">RabbitMQ, Celery</a>
+      <br> <a href = "https://invenio.readthedocs.io/en/latest/architecture/infrastructure.html#caching-and-temporary-storage">Redis, Memcache</a>
+
+    <br><br>****If you are not sure where in the directory you should be
+    <br>Step 1 is performed in ~/src/my-site
+    <br>Step 4 is performed in ~/src/my-site
+
+    <br><br>****If you are new to the command line/Bash shell
+    <br>Steps 2, 3, and 7 will be using Bash shell commands that bring you
+    to a new location within the directory. Your current environment is replaced
+    with whichever environment is specified in the command. Step 2 is entering
+    the database shell, step 3 is entering the cache shell, and step7 is
+    entering the web-ui. After each of these steps, if you want to return to
+    ~/src/my-site, you must use an exit command(or multiple exit commands).
+    See below for exit commands, highlighted is what you type:
+
+      <br><br>Step 2 to leave db shell:  my-site-#  <mark>\q</mark>
+      <br>Step 2 to leave the root:  root@&#8249;combo of letters and numbers here&#8250;:/# <mark>exit</mark>
+
+      <br><br>Step 3 to leave cache shell:  127.0.0.1:6379&#8250; <mark>exit</mark>
+      <br>Step 3 to leave the root: root@&#8249;combo of letters and numbers here&#8250;:/# <mark>exit</mark>
+
+      <br><br>Step 7 to leave the root: root@&#8249;combo of letters and numbers here&#8250;:/# <mark>exit</mark>
+    </p>
+
+  </body>
+</html>
